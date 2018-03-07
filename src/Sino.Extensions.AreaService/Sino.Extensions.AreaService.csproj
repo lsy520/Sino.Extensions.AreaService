@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>2.0.0-beta1</Version>
+    <Authors>Sino</Authors>
+    <Company />
+    <RepositoryType>git</RepositoryType>
+    <PackageIconUrl>http://avatars0.githubusercontent.com/u/16951448?v=3&amp;s=70</PackageIconUrl>
+    <RepositoryUrl>https://github.com/Vip56/Sino.Extensions.AreaService.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Vip56/Sino.Extensions.AreaService</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
