@@ -9,6 +9,8 @@
     <PackageIconUrl>http://avatars0.githubusercontent.com/u/16951448?v=3&amp;s=70</PackageIconUrl>
     <RepositoryUrl>https://github.com/Vip56/Sino.Extensions.AreaService.git</RepositoryUrl>
     <PackageProjectUrl>https://github.com/Vip56/Sino.Extensions.AreaService</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/Vip56/Sino.Extensions.AreaService/blob/dev/LICENSE</PackageLicenseUrl>
+    <PackageTags>area</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
