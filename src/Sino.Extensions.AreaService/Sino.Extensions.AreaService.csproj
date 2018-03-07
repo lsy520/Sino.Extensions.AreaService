@@ -2,15 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>2.0.0-beta1</Version>
-    <Authors>Sino</Authors>
-    <Company />
+    <Version>2.0.0-beta2</Version>
+    <Authors>y-z-f</Authors>
+    <Company>江苏斯诺科技有限公司</Company>
     <RepositoryType>git</RepositoryType>
     <PackageIconUrl>http://avatars0.githubusercontent.com/u/16951448?v=3&amp;s=70</PackageIconUrl>
     <RepositoryUrl>https://github.com/Vip56/Sino.Extensions.AreaService.git</RepositoryUrl>
     <PackageProjectUrl>https://github.com/Vip56/Sino.Extensions.AreaService</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/Vip56/Sino.Extensions.AreaService/blob/dev/LICENSE</PackageLicenseUrl>
     <PackageTags>area</PackageTags>
+    <Description>提供省市区服务</Description>
   </PropertyGroup>
 
   <ItemGroup>
