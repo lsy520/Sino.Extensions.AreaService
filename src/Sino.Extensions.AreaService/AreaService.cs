@@ -73,7 +73,7 @@ namespace Sino.Extensions.AreaService
             if (isFullName)
                 return $"{area.Province}{area.City}{area.County}";
 
-            switch(code.Length)
+            switch (code.Length)
             {
                 case 2:
                     return area.Province;
@@ -93,20 +93,32 @@ namespace Sino.Extensions.AreaService
             if (string.IsNullOrEmpty(province))
                 throw new ArgumentNullException("省必须设置");
             if (string.IsNullOrEmpty(city))
-                count-=2;
+                count -= 2;
             if (string.IsNullOrEmpty(county))
                 count--;
 
             string code = null;
-            switch(count)
+            switch (count)
             {
                 case 1:
                     {
+                        if (province.EndsWith("省"))
+                        {
+                            province = province.Replace("省", "");
+                        }
+                        if (city.EndsWith("市"))
+                        {
+                            city = city.Substring(0, city.Length - 1);
+                        }
                         code = _areas.Where(x => x.Value.Province == province && x.Value.City == city).Select(x => x.Key).FirstOrDefault();
                     }
                     break;
                 case 2:
                     {
+                        if (province.EndsWith("省"))
+                        {
+                            province = province.Replace("省", "");
+                        }
                         if (city.EndsWith("市"))
                         {
                             city = city.Substring(0, city.Length - 1);
