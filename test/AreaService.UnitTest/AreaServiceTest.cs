@@ -139,6 +139,33 @@ namespace SinoAreaService.UnitTest
 
             code = _area.GetCode("北京", "北京");
             Assert.Equal(code, "0101");
+
+            code = _area.GetCode("安徽省");
+            Assert.Equal(code, "12");
+
+            code = _area.GetCode("安徽");
+            Assert.Equal(code, "12");
+
+            code = _area.GetCode("安徽省", "芜湖市");
+            Assert.Equal(code, "1202");
+
+            code = _area.GetCode("安徽", "芜湖市");
+            Assert.Equal(code, "1202");
+
+            code = _area.GetCode("安徽省", "芜湖");
+            Assert.Equal(code, "1202");
+
+            code = _area.GetCode("安徽省", "芜湖市", "镜湖区");
+            Assert.Equal(code, "120202");
+
+            code = _area.GetCode("安徽", "芜湖市", "镜湖区");
+            Assert.Equal(code, "120202");
+
+            code = _area.GetCode("安徽", "芜湖", "镜湖区");
+            Assert.Equal(code, "120202");
+
+            code = _area.GetCode("安徽省", "芜湖", "镜湖区");
+            Assert.Equal(code, "120202");
         }
 
         [Fact]
