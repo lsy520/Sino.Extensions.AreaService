@@ -20,7 +20,7 @@ namespace Sino.Extensions.AreaService
         /// <param name="province">省名称</param>
         /// <param name="city">市名称</param>
         /// <param name="county">区名称</param>
-        string GetCode(string province, string city = null, string county = null);
+        string GetCode(string province, string city = null, string county = null, string version = null);
 
         /// <summary>
         /// 根据编号获取名称

@@ -1,3 +1,7 @@
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
+using Sino.CommonService;
 using Sino.Extensions.AreaService;
 using System;
 using System.Collections.Generic;
@@ -14,9 +18,7 @@ namespace SinoAreaService.UnitTest
 
         public AreaServiceTest()
         {
-            Stopwatch watch = Stopwatch.StartNew();
-            _area = new AreaService();
-            watch.Stop();
+            _area = new AreaService(null);
         }
 
         [Fact]
