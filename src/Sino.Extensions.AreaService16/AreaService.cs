@@ -30,9 +30,11 @@ namespace Sino.Extensions.AreaService
         {
             string path = PlatformServices.Default.Application.ApplicationBasePath + "\\Regions";
             string json = null;
+            Stream fs = null;
             try
             {
-                using (var rr = new ResourceReader(path))
+                fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Read);
+                using (var rr = new ResourceReader(fs))
                 {
                     var iter = rr.GetEnumerator();
                     while (iter.MoveNext())
@@ -43,6 +45,8 @@ namespace Sino.Extensions.AreaService
                 }
             }
             catch (Exception) { }
+            if (fs != null)
+                fs.Dispose();
             if (json == null || json == "[]")
             {
                 json = Regions.Areas;
@@ -78,10 +82,13 @@ namespace Sino.Extensions.AreaService
                             };
                             if (areas?.Count > 0)
                             {
-                                using (var rw = new ResourceWriter(path))
+                                fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Write);
+                                using (var rw = new ResourceWriter(fs))
                                 {
                                     rw.AddResource("Areas", data.ToJsonString());
                                 }
+                                if (fs != null)
+                                    fs.Dispose();
                             }
                         }
                     }

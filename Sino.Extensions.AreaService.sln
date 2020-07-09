@@ -14,9 +14,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".global", ".global", "{6494
 		ReadMe.md = ReadMe.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sino.Extensions.AreaService", "src\Sino.Extensions.AreaService\Sino.Extensions.AreaService.csproj", "{6E1149C2-0A30-4764-BCE9-37F0F0F25892}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sino.Extensions.AreaService", "src\Sino.Extensions.AreaService\Sino.Extensions.AreaService.csproj", "{6E1149C2-0A30-4764-BCE9-37F0F0F25892}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AreaService.UnitTest", "test\AreaService.UnitTest\AreaService.UnitTest.csproj", "{8CBC4698-E612-4E7E-AFF2-D36B71BE75D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AreaService.UnitTest", "test\AreaService.UnitTest\AreaService.UnitTest.csproj", "{8CBC4698-E612-4E7E-AFF2-D36B71BE75D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sino.Extensions.AreaService16", "src\Sino.Extensions.AreaService16\Sino.Extensions.AreaService16.csproj", "{FE7215AC-A882-4428-A2E7-F653D2A2AD27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{8CBC4698-E612-4E7E-AFF2-D36B71BE75D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CBC4698-E612-4E7E-AFF2-D36B71BE75D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CBC4698-E612-4E7E-AFF2-D36B71BE75D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE7215AC-A882-4428-A2E7-F653D2A2AD27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE7215AC-A882-4428-A2E7-F653D2A2AD27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE7215AC-A882-4428-A2E7-F653D2A2AD27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE7215AC-A882-4428-A2E7-F653D2A2AD27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6E1149C2-0A30-4764-BCE9-37F0F0F25892} = {26B5DE9A-57C7-4A37-8C98-70FB769F7A9B}
 		{8CBC4698-E612-4E7E-AFF2-D36B71BE75D0} = {6FC16F2F-4AA9-40E5-BB46-A4AE990EF01B}
+		{FE7215AC-A882-4428-A2E7-F653D2A2AD27} = {26B5DE9A-57C7-4A37-8C98-70FB769F7A9B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {31F4689C-D487-43C4-BDB9-1DC5E004386F}

@@ -232,21 +232,24 @@ namespace SinoAreaService.UnitTest
         [Fact]
         public void TestGetCityCodeByProvinceCode()
         {
-
+            var version = "V2_SN";
+            var ps = _area.Provinces(version);
+            for (int i = 0; i < ps?.Count; i++)
+            {
+                var pCode = ps[i].Code;
+                var citys = _area.Citys(pCode);
+                
+                for (int j = 0; j < citys?.Count; j++)
+                {
+                    var countys = _area.Countys(citys[j].Code);
+                }
+            }
         }
 
         [Fact]
         public void TestProvinceEqualCode()
         {
-            for (int i = 0; i < _area.ProvinceCodes.Count; i++)
-            {
-                var code = _area.ProvinceCodes[i];
-                var name = _area.ProvinceNames[i];
-
-                var destCode = _area.GetCode(name);
-
-                Assert.Equal(code, destCode);
-            }
+            
         }
     }
 }
